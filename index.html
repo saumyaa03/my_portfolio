@@ -1,127 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saumya - Developer Portfolio</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
 
-        body {
-            background-color: rgb(33, 54, 66);
-            color: white;
-            font-family: 'Poppins', sans-serif;
-        }
+      body {
+        background-color: rgb(33, 54, 66);
+        /* background-color: rgb(33, 66, 51); */
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
 
-        nav {
-            background-color: rgb(44, 97, 130);
-            display: flex;
-            justify-content: space-around;
-            /* this  */
-            align-items: center;
-            height: 80px;
-        
-        }
+      nav {
+        background-color: rgb(44, 97, 130);
+        display: flex;
+        justify-content: space-around;
+        /* this  */
+        align-items: center;
+        height: 80px;
+      }
 
-        nav ul {
-            display: flex;
-            /* this */
-            justify-content: center;
-        }
+      nav ul {
+        display: flex;
+        /* this */
+        justify-content: center;
+      }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 15px;
-        }
+      nav ul li {
+        list-style: none;
+        margin: 0 15px;
+      }
 
-        nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
 
-        nav ul li a:hover {
-            color: rgb(59, 150, 181);
-            font-size: 1.03rem;
-        }
+      nav ul li a:hover {
+        color: rgb(59, 150, 181);
+        font-size: 1.03rem;
+      }
 
-        .left {
-            font-size: 1.5rem;
-        }
+      main hr {
+        border: 0;
+        background-color: rgb(184, 223, 236);
+        height: 0.2px;
+        margin: 20px 20px;
+      }
 
-        .first-section {
-            display: flex;
-            justify-content: space-around;
+      .left {
+        font-size: 1.5rem;
+      }
 
-            align-items: center;
-            margin: 80px 0;
-            
+      .first-section {
+        display: flex;
+        justify-content: space-around;
 
-            /* border: 2px  solid pink; */
-        }
+        align-items: center;
+        margin: 15vh 0;
 
-        .first-section > div {
-            width: 30%;
-            /* background-color: red; */
-        }
+        /* border: 2px solid pink; */
+      }
 
-        .left-section {
-            /* background-color: rgb(123, 123, 186); */
-            font-size: 2.5rem;
-            margin: 70px 0;
+      .first-section > div {
+        width: 30%;
+        /* background-color: red; */
+      }
 
-        }
-/* 
+      .left-section {
+        /* background-color: rgb(123, 123, 186); */
+        font-size: 2.5rem;
+        margin: 70px 0;
+      }
+
+      /* 
         .right-section {
             background-color: rgb(123, 123, 186);
 
         } */
 
-        .right-section img {
-            width: 80%;
-        }
+      .right-section img {
+        width: 80%;
+      }
 
-        .name-blue {
-            color: rgb(130, 219, 244);
-        }
+      .text-blue {
+        color: rgb(130, 219, 244);
+      }
+
+      .text-gray {
+        color: gray;
+        font-size: 0.8rem;
+      }
+
+      #element {
+        color: rgb(130, 219, 244);
+      }
+
+      .second-section {
+        max-width: 80vw;
+        margin: auto;
+        height:80vh;
+
+        /* border: 2px solid pink; */
+      }
+
+      .second-section h1 {
+        font-size: 1.5rem;
+    
+      }
+
+      .second-section .horizontal-bar {
+        background-color: white;
+        width: 80vw; 
+        height: 2px;
+        margin: 45px 0;
+
+        display: flex;
+      }
+
+      .second-section .vertical-bar {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+
+        margin: 0 40px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="left">Saumya's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">About</a></li>
-                    <li><a href="/">Services</a></li>
-                    <li><a href="/">Projects</a></li>
-                    <li><a href="/">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="left">Saumya's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <section class="first-section">
-            <div class="left-section">
-                Hi, my name is <span class="name-blue">Saumya Rana</span>,
-                <div>and I am a Software Engineer.</div>
-                
-            </div>
-            <div class="right-section">
-                <img src="images/dev.png" alt="Developer photo">
-            </div>
-        </section>
-    </main>
-</body>
+      <section class="first-section">
+        <div class="left-section">
+          Hi, my name is <span class="text-blue">Saumya Rana</span>,
+          <div>and I am a</div>
+          <span id="element"></span>
+        </div>
+        <div class="right-section">
+          <img src="images/dev.png" alt="Developer photo" />
+        </div>
+      </section>
 
+      <hr />
+
+      <section class="second-section">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="horizontal-bar">
+            <div class="vertical-bar">
+                <img src="" alt="">
+            </div>
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+            <div class="vertical-bar"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Software Engineer", "Web Developer", "Spring Developer"],
+        typeSpeed: 50,
+        loop: true,
+      });
+    </script>
+  </body>
 </html>
