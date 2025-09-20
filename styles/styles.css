@@ -8,24 +8,29 @@ html {
   }  
 
 body {
-    background-color: white; /* White base */
-  color: #1F1F1F;            /* Dark text */
+  background-color: white; 
+  color: #1F1F1F;
   font-family: "Poppins", sans-serif;
+  padding-top: 60px;
 }
 
 section {
     padding: 80px 20px;   /* equal spacing top & bottom */
   }
 
-nav {
-    background-color: #FFFFFF;   /* white nav */
-  border-bottom: 1px solid #F3F3F3; /* subtle line */
-  display: flex;
-  justify-content: space-around;
-  /* this  */
-  align-items: center;
-  height: 80px;
-}
+  nav {
+    position: fixed;              /* keep navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;    /* white nav */
+    border-bottom: 1px solid #F3F3F3; /* subtle line */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    z-index: 1000;                /* keeps nav above other elements */
+  }
 
 nav ul {
   display: flex;
@@ -768,4 +773,10 @@ main hr {
 
 
   
+  .logo {
+    font-family: "Pacifico", cursive; 
+    font-size: 1.8rem;
+    color: #a78bfa; 
+    font-weight: normal;
+  }
   
