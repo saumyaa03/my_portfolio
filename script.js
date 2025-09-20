@@ -7,10 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // ✅ Typed.js setup
   var typed = new Typed("#element", {
     strings: [
-      "Full-Stack Developer in Progress",
-      "Backend Enthusiast (Spring Boot, Java)",
-      "Frontend Explorer (React, JavaScript)",
-      "Passionate About Scalable Systems"
+      "Status: Portfolio is still compiling... ⏳",
+      "Exploring backend, frontend & everything in between",
+      "Always learning. Always building..."
     ],
     typeSpeed: 50,
     backSpeed: 30,

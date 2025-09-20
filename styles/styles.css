@@ -127,13 +127,15 @@ main hr {
   }
   
   
+
   #element {
-    display: block;
-    margin-top: 20px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #8e6cff; /* soft lavender */
-  }
+  display: block;
+  margin-top: 20px;
+  font-size: 1rem;
+  font-family: monospace;
+  color: #8e6cff; /* Lavender shade */
+}
+
   
 
 .first-section > div {
@@ -765,3 +767,5 @@ main hr {
   
 
 
+  
+  
