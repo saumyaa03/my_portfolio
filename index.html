@@ -10,187 +10,367 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-color: rgb(33, 54, 66);
-        /* background-color: rgb(33, 66, 51); */
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-
-      nav {
-        background-color: rgb(44, 97, 130);
-        display: flex;
-        justify-content: space-around;
-        /* this  */
-        align-items: center;
-        height: 80px;
-      }
-
-      nav ul {
-        display: flex;
-        /* this */
-        justify-content: center;
-      }
-
-      nav ul li {
-        list-style: none;
-        margin: 0 15px;
-      }
-
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-
-      nav ul li a:hover {
-        color: rgb(59, 150, 181);
-        font-size: 1.03rem;
-      }
-
-      main hr {
-        border: 0;
-        background-color: rgb(184, 223, 236);
-        height: 0.2px;
-        margin: 20px 20px;
-      }
-
-      .left {
-        font-size: 1.5rem;
-      }
-
-      .first-section {
-        display: flex;
-        justify-content: space-around;
-
-        align-items: center;
-        margin: 15vh 0;
-
-        /* border: 2px solid pink; */
-      }
-
-      .first-section > div {
-        width: 30%;
-        /* background-color: red; */
-      }
-
-      .left-section {
-        /* background-color: rgb(123, 123, 186); */
-        font-size: 2.5rem;
-        margin: 70px 0;
-      }
-
-      /* 
-        .right-section {
-            background-color: rgb(123, 123, 186);
-
-        } */
-
-      .right-section img {
-        width: 80%;
-      }
-
-      .text-blue {
-        color: rgb(130, 219, 244);
-      }
-
-      .text-gray {
-        color: gray;
-        font-size: 0.8rem;
-      }
-
-      #element {
-        color: rgb(130, 219, 244);
-      }
-
-      .second-section {
-        max-width: 80vw;
-        margin: auto;
-        height:80vh;
-
-        /* border: 2px solid pink; */
-      }
-
-      .second-section h1 {
-        font-size: 1.5rem;
-    
-      }
-
-      .second-section .horizontal-bar {
-        background-color: white;
-        width: 80vw; 
-        height: 2px;
-        margin: 45px 0;
-
-        display: flex;
-      }
-
-      .second-section .vertical-bar {
-        height: 93px;
-        width: 1px;
-        background-color: white;
-
-        margin: 0 40px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="left">Saumya's Portfolio</div>
+        <div class="left">Saumya</div>
         <div class="right">
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="first-section">
-        <div class="left-section">
-          Hi, my name is <span class="text-blue">Saumya Rana</span>,
-          <div>and I am a</div>
-          <span id="element"></span>
+        <section class="first-section fade-in">
+            <!-- Left side: Illustration -->
+            <div class="hero-image">
+              <img src="images/hero_im.png" alt="Saumya working" />
+            </div>
+          
+            <!-- Right side: Text -->
+            <div class="hero-text">
+              <p>Hi, my name is <span class="text-blue">Saumya Rana</span>,</p>
+              <p>I’m a Master’s student in Applied Computer Science,</p>
+              <p>focused on backend systems while exploring frontend development.</p>
+              <span id="element"></span>
+          
+              <!-- Buttons -->
+              <div class="hero-buttons">
+                <a href="#projects" class="btn primary">🚀 View Projects</a>
+                <a href="files/Saumya_Rana_CV.pdf" download class="btn secondary">📄 Download CV</a>
+              </div>
+            </div>
+          </section>
+          
+          
+
+      <section id="about" class="about-section fade-in">
+        <h1 class="section-title">About Me</h1>
+        <div class="about-content">
+          <h2>What I’ve Done</h2>
+          <p>
+            I’ve worked on projects like a <em>full-stack e-commerce platform</em> and a 
+            <em>fitness microservices system</em> with React, Spring Boot, Docker, and Kafka.  
+            I also bring prior industry experience from <strong>Capgemini</strong>, where I contributed 
+            to enterprise systems in Agile teams. Along the way, I supported my father’s 
+            <strong>medical supply business</strong> during COVID — an experience that sharpened 
+            my adaptability and multitasking skills.
+          </p>
+      
+          <h2>Why I Build</h2>
+          <p>
+            I enjoy the challenge of designing systems that are not only functional but scalable.  
+            Whether it’s backend architecture or experimenting with frontend design, I’m motivated 
+            by curiosity and the satisfaction of turning ideas into solutions that people can 
+            actually use.
+          </p>
         </div>
-        <div class="right-section">
-          <img src="images/dev.png" alt="Developer photo" />
+      </section>
+      
+
+      <section id="education" class="education-section">
+        <h1 class="section-title">Education</h1>
+        <div class="timeline-stepper">
+
+            <div class="step">
+            <div class="circle">🎓</div>
+            <div class="step-content">
+              <h2>Master of Applied Computer Science (Co-op)</h2>
+              <h3>Concordia University, Montreal, QC</h3>
+              <p class="date">2024 – 2026 (Expected)</p>
+              <p>
+                Currently pursuing my Master’s with a strong focus on
+                algorithmic design, artificial intelligence, and distributed
+                systems. As a member of the Institute for Co-operative
+                Education, I’m combining academic learning with industry
+                exposure to build practical, real-world solutions. GPA:
+                3.91/4.30
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="circle">🎓</div>
+            <div class="step-content">
+              <h2>Graduate Diploma in Computer Science</h2>
+              <h3>Concordia University, Montreal, QC</h3>
+              <p class="date">2023 – 2024</p>
+              <p>
+                Completed an intensive program covering advanced C++, operating
+                systems, and data structures. This foundation strengthened my
+                core programming skills and prepared me for advanced
+                graduate-level coursework. GPA: 3.94/4.30
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="step">
+            <div class="circle">🎓</div>
+            <div class="step-content">
+              <h2>Bachelor of Engineering – Electronics & Communication</h2>
+              <h3>Chitkara University, Punjab, India</h3>
+              <p class="date">2013 – 2017</p>
+              <p>
+                Built a strong technical foundation in object-oriented
+                programming, VLSI design, C programming, and computer
+                networking. This program sparked my initial curiosity in
+                software systems and embedded technologies.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <hr />
+      <section id="skills" class="skills-section fade-in">
+        <h1 class="section-title">Skills</h1>
+        <p class="section-subtitle fade-in-subtitle">
+          A blend of programming languages, frameworks, tools, and databases
+          that I use to build efficient, scalable, and modern applications.
+        </p>
 
-      <section class="second-section">
-        <span class="text-gray">What I have done so far</span>
-        <h1>Work Experience</h1>
-        <div class="horizontal-bar">
-            <div class="vertical-bar">
-                <img src="" alt="">
+        <div class="skills-categories">
+          <!-- Langs -->
+          <div class="skill-card">
+            <h2>Languages</h2>
+            <div class="skill-items">
+              <div class="skill-icon">
+                <i class="devicon-java-plain colored"></i>
+                <p>Java</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <p>C++</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-javascript-plain colored"></i>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-python-plain colored"></i>
+                <p>Python</p>
+              </div>
             </div>
-            <div class="vertical-bar"></div>
-            <div class="vertical-bar"></div>
-            <div class="vertical-bar"></div>
+          </div>
+
+          <!-- FWs -->
+          <div class="skill-card">
+            <h2>Frameworks</h2>
+            <div class="skill-items">
+              <div class="skill-icon">
+                <i class="devicon-spring-plain colored"></i>
+                <p>Spring Boot</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-react-original colored"></i>
+                <p>React</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-nodejs-plain colored"></i>
+                <p>Node.js</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card">
+            <h2>Tools</h2>
+            <div class="skill-items">
+              <div class="skill-icon">
+                <i class="devicon-docker-plain colored"></i>
+                <p>Docker</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-git-plain colored"></i>
+                <p>Git</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-jenkins-plain colored"></i>
+                <p>Jenkins</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-apachekafka-original colored"></i>
+                <p>Kafka</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DBs-->
+          <div class="skill-card">
+            <h2>Databases</h2>
+            <div class="skill-items">
+              <div class="skill-icon">
+                <i class="devicon-postgresql-plain colored"></i>
+                <p>PostgreSQL</p>
+              </div>
+              <div class="skill-icon">
+                <i class="devicon-mongodb-plain colored"></i>
+                <p>MongoDB</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section fade-in">
+        <h1 class="section-title">Projects</h1>
+        <p class="section-subtitle fade-in-subtitle">
+          A showcase of selected projects that highlight my expertise in
+          full-stack development, system design, and modern software engineering
+          practices.
+        </p>
+
+
+        <!-- Project 1: E-commerce -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/ecommerce.png"
+              alt="E-commerce Project Screenshot"
+            />
+          </div>
+          <div class="project-info">
+            <h2>ADS Lifestyle Store</h2>
+            <p>
+              A full-stack e-commerce platform built with
+              <strong>React</strong> and <strong>Spring Boot</strong>, featuring
+              JWT-based authentication, product management, role-based login,
+              and a responsive frontend. Designed as a real-world platform for
+              my father's business, <em>Arian Drugs & Surgicals</em>.
+            </p>
+
+            <!-- Tech stack tags -->
+            <div class="tags">
+              <span>React</span>
+              <span>Spring Boot</span>
+              <span>JWT</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+              <a href="#" class="btn live">Live Demo</a>
+              <a href="#" class="btn source">View Source</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Microservices -->
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="images/microservices.png"
+              alt="Microservices Project Screenshot"
+            />
+          </div>
+          <div class="project-info">
+            <h2>Fitness Microservices Platform</h2>
+            <p>
+              A distributed system built with
+              <strong>Spring Boot microservices</strong>, featuring
+              <strong>UserService</strong>, <strong>ActivityService</strong>,
+              <strong>AIService</strong>, service discovery with
+              <strong>Eureka</strong>, event streaming using
+              <strong>Kafka</strong>, and authentication with
+              <strong>Keycloak</strong>. This project demonstrates containerized
+              deployment and scalable service orchestration.
+            </p>
+
+            <!-- tags -->
+            <div class="tags">
+              <span>Spring Boot</span>
+              <span>React</span>
+              <span>Kafka</span>
+              <span>Keycloak</span>
+              <span>Docker</span>
+              <span>Kubernetes</span>
+            </div>
+
+            <!-- buttons -->
+            <div class="buttons">
+              <a href="#" class="btn live">Live Demo</a>
+              <a href="#" class="btn source">View Source</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section fade-in">
+        <h1 class="section-title">Contact</h1>
+        <p class="section-subtitle fade-in-subtitle">``
+          Whether you have a project in mind, an opportunity to discuss, or just
+          want to connect, feel free to reach out - I’d be happy to hear from you.
+        </p>
+
+
+        <div class="contact-card">
+          <h2>Connect With Me 🚀</h2>
+          <form class="contact-form">
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+            />
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your Name"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <button type="submit" class="btn submit-btn">Send</button>
+          </form>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Saumya Rana. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:saumya.rana.009@gmail.com">Email</a>
+          <a href="https://github.com/saumyaa03" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/saumya-rana12" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-      var typed = new Typed("#element", {
-        strings: ["Software Engineer", "Web Developer", "Spring Developer"],
-        typeSpeed: 50,
-        loop: true,
-      });
-    </script>
+    <!-- EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
