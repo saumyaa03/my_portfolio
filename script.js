@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   var typed = new Typed("#element", {
     strings: [
       "Status: Portfolio is still compiling... ⏳",
-      "Exploring backend, frontend & everything in between",
-      "Always learning. Always building..."
+      "Co-op & Internship Ready",
+      "Always Building Something New 🙂"
     ],
     typeSpeed: 50,
     backSpeed: 30,
