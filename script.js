@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // ✅ Init EmailJS
+  // Init EmailJS
   (function() {
     emailjs.init("WoY4kskosib-svC8s"); 
   })();
 
-  // ✅ Typed.js setup
+  // Typed.js setup
   var typed = new Typed("#element", {
     strings: [
       "Status: Portfolio is still compiling... ⏳",
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   });
 
-  // ✅ Handle form submission
+  // Handle form submission
   const form = document.querySelector(".contact-form");
   if (form) {
     form.addEventListener("submit", function(e) {
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ✅ Fade-in animation
+  // Fade-in animation
   const faders = document.querySelectorAll(".fade-in, .fade-in-subtitle");
   const appearOptions = { threshold: 0.2 };
 
