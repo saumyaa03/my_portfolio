@@ -5,7 +5,6 @@ It showcases my projects, skills, and background as I grow into a **full-stack d
 
 🌐 **Live Website**: https://saumyaa03.github.io/my_portfolio/
 
----
 
 ## Features  
 - **Hero Section** with animated intro and CV download.  
@@ -17,15 +16,13 @@ It showcases my projects, skills, and background as I grow into a **full-stack d
   - **Fitness Microservices Platform** – Scalable distributed system using Kafka, Keycloak, Docker.  
 - **Contact Section** with EmailJS integration.  
 
----
 
 ## Tech Stack  
 - **Frontend**: HTML, CSS, JavaScript  
 - **Libraries**: Typed.js, Font Awesome, Devicons  
-- **Styling**: Flexbox, Grid, custom CSS (lavender theme ✨)  
+- **Styling**: Flexbox, Grid, custom CSS (lavender theme)  
 - **Hosting**: GitHub Pages  
 
----
 
 ## Getting Started  
 
@@ -39,13 +36,11 @@ Open `index.html` in your browser to view locally.
 
 If using VS Code, install the **Live Server** extension and right-click → *Open with Live Server*.  
 
----
 
-## 📄 Projects in Detail  
+## Projects in Detail  
 - **[ADS Lifestyle Store](https://github.com/saumyaa03/ecommerce-app)**  
 - **[Fitness Microservices Platform](https://github.com/saumyaa03/fitness-microservices)**  
 
----
 
 ## Contact  
 - **Email**: [saumya.rana.009@gmail.com](mailto:saumya.rana.009@gmail.com)  
@@ -54,4 +49,4 @@ If using VS Code, install the **Live Server** extension and right-click → *Ope
 
 ---
 
-✨ This portfolio is a continuous work in progress — just like my journey into software engineering!  
+✨ This portfolio is a continuous work in progress - just like my journey into software engineering!  
