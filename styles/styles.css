@@ -274,42 +274,66 @@
 }
 
   /* ===== SKILLS  ===== */
+/* ===== SKILLS ===== */
 
-  .skills-section {
-    padding: 50px 10% 60px;
-  }
-  .skills-section .section-title {
-    margin-bottom: 20px;
-  }
-  
+.skills-section {
+  padding: 80px 10%;
+}
+
+.skills-section .section-title {
+  margin-bottom: 25px;
+}
 
 .skills-intro {
-  max-width: 680px;
+  max-width: 720px;
+  margin: 0 auto 60px;
+  text-align: center;
   color: #555;
-  margin-bottom: 30px;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px 60px;
+  gap: 60px 80px;
 }
-
 
 .skill-group h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #111;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
+  position: relative;
 }
 
+.skill-group h3::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: #855dc9;
+  margin-top: 6px;
+  border-radius: 2px;
+}
 
 .skill-group p {
   font-size: 0.95rem;
   color: #444;
+  line-height: 1.6;
 }
-.skill-group.full-width {
-  grid-column: 1 / -1;
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -475,7 +499,7 @@
   /* ===== ARCHITECTURE SECTION ===== */
 
 .architecture-section {
-  padding: 60px 10%;
+  padding: 80px 10%;
   background: #f9fafb;
   border-top: 1px solid #e5e5e5;
 }
