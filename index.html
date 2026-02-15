@@ -32,337 +32,388 @@
   <body>
     <header>
       <nav>
-        <div class="left logo">Saumya</div>
+        <a href="#" class="logo">Saumya</a>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
+          
         </div>
       </nav>
     </header>
 
     <main>
-        <section class="first-section fade-in">
-            <!-- Left side: Illustration -->
-            <div class="hero-image">
-              <img src="images/hero_im.png" alt="Saumya working" />
-            </div>
+        <section class="hero">
+            <div class="hero-container">
           
-            <!-- Right side: Text -->
-            <div class="hero-text">
-              <p>Hi, my name is <span class="text-blue">Saumya Rana</span>,</p>
-              <p>I’m a Master’s student in Applied Computer Science,</p>
-              <p>focused on backend systems while exploring frontend development.</p>
-              <span id="element"></span>
+              <div class="hero-left">
+                <p class="hero-name">Saumya Rana</p>
           
-              <!-- <p class="work-progress">&gt; Status: Portfolio is still compiling... ⏳</p> -->
-
-              <!-- Typed.js Line -->
-    <span id="element"></span>
-    
-              <!-- Buttons -->
-              <div class="hero-buttons">
-                <a href="#projects" class="btn primary">🚀 View Projects</a>
-                <a href="files/Saumya_Rana_CV.pdf" download class="btn secondary">📄 Download CV</a>
+                <h1 class="hero-title">
+                  Backend Engineer<br>
+                  Distributed Systems & Cloud-Native Architecture
+                </h1>
+                
+                
+                <p class="hero-subtitle">
+                  Master’s in Applied Computer Science · Java · Spring Boot · Kafka
+                </p>
+                
+                <p class="hero-description">
+                  I design and build production-ready backend systems using
+                  microservices architecture, secure authentication flows,
+                  event-driven communication, and containerized deployment.
+                  Experienced in building scalable REST APIs with JWT,
+                  service discovery, and cloud-based infrastructure.
+                </p>
+                
+          
+                <div class="hero-buttons">
+                  <a href="#projects" class="btn-primary">View Projects</a>
+                  <a href="files/Saumya_Rana_CV.pdf" class="btn-secondary" download>Download Resume</a>
+                </div>
+                <p class="hero-stats">
+                  Microservices · Event-Driven · Secure APIs · Containerized Deployment
+                </p>
+                
               </div>
+          
+              <!-- <div class="hero-right">
+                <img src="images/microservices-diagram.jpg" 
+                     alt="Microservices Architecture" 
+                     class="hero-image">
+              </div> -->
+          
             </div>
           </section>
           
-          
 
-      <section id="about" class="about-section fade-in">
-        <h1 class="section-title">About Me</h1>
-        <div class="about-content">
-          <h2>What I’ve Done</h2>
-          <p>
-            I’ve worked on projects like a <em>full-stack e-commerce platform</em> and a 
-            <em>fitness microservices system</em> with React, Spring Boot, Docker, and Kafka.  
-            I also bring prior industry experience from <strong>Capgemini</strong>, where I contributed 
-            to enterprise systems in Agile teams. Along the way, I supported my father’s 
-            <strong>medical supply business</strong> during COVID — an experience that sharpened 
-            my adaptability and multitasking skills.
-          </p>
+      <!-- EXPERIENCE -->
+      <section id="experience" class="experience-section fade-in">
+        <h1 class="section-title">Professional Experience</h1>
       
-          <h2>Why I Build</h2>
-          <p>
-            I enjoy the challenge of designing systems that are not only functional but scalable.  
-            Whether it’s backend architecture or experimenting with frontend design, I’m motivated 
-            by curiosity and the satisfaction of turning ideas into solutions that people can 
-            actually use.
+        <div class="experience-item">
+          <div class="experience-header">
+            <h2>Senior Software Engineer</h2>
+            <span class="date">2017 – 2019</span>
+          </div>
+      
+          <h3>Capgemini</h3>
+      
+          <ul>
+            <li>
+              Developed and maintained backend business logic modules for enterprise
+              banking applications in a high-availability production environment using Java.
+            </li>
+            <li>
+              Worked within Agile Scrum teams to deliver secure and reliable features,
+              participating in sprint planning, peer code reviews, and integration testing.
+            </li>
+            <li>
+              Investigated and resolved high-priority production issues, ensuring
+              system reliability and minimizing downtime for critical financial services.
+            </li>
+            <li>
+              Collaborated with QA engineers and business analysts to accurately implement
+              complex functional requirements across distributed system components.
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+
+         <!-- PROJECTS -->
+         <section id="projects" class="projects-section fade-in">
+          <h1 class="section-title">Projects</h1>
+          <p class="section-subtitle fade-in-subtitle">
+            A showcase of selected projects that highlight my expertise in
+            full-stack development, system design, and modern software engineering
+            practices.
           </p>
+  
+  
+          <!-- Project 1: E-commerce -->
+          <section class="project-case-study">
+            <div class="project-container">
+          
+              <h2 class="project-title">ADS E-commerce Platform</h2>
+              <p class="project-role">Backend Architect & API Designer</p>
+          
+              <p class="project-overview">
+                Designed and implemented a modular backend system for product, user, 
+                and order management with secure authentication and transactional integrity.
+              </p>
+          
+              <div class="project-block">
+                <h3>System Design</h3>
+                <ul>
+                  <li>Designed RESTful APIs following layered Spring Boot architecture.</li>
+                  <li>Separated controller, service, and persistence layers for maintainability.</li>
+                  <li>Ensured clear domain boundaries for user, product, and order management.</li>
+                </ul>
+              </div>
+          
+              <div class="project-block">
+                <h3>Data Modeling</h3>
+                <ul>
+                  <li>Modeled relational schema in PostgreSQL with normalized relationships.</li>
+                  <li>Implemented transactional integrity for order processing workflows.</li>
+                  <li>Applied indexing strategies to optimize query performance.</li>
+                </ul>
+              </div>
+          
+              <div class="project-block">
+                <h3>Security Implementation</h3>
+                <ul>
+                  <li>Implemented stateless JWT-based authentication.</li>
+                  <li>Applied role-based authorization to protect secured endpoints.</li>
+                  <li>Ensured proper validation and error handling for secure API design.</li>
+                </ul>
+              </div>
+          
+              <div class="project-tech">
+                <strong>Tech Stack:</strong>
+                Spring Boot · PostgreSQL · JWT · Docker · React
+              </div>
+          
+              <div class="project-links">
+                <a href="https://github.com/saumyaa03/ecommerce-app/tree/main" 
+                   target="_blank" 
+                   class="project-source">
+                   View Source
+                </a>
+              </div>
+          
+            </div>
+          </section>
+          
+        
+        
+
+        <section class="project-case-study">
+          <div class="project-container">
+        
+            <h2 class="project-title">Fitness Microservices Platform</h2>
+            <p class="project-role">Backend Architect & API Designer</p>
+        
+            <p class="project-overview">
+              Designed and implemented a distributed microservices architecture 
+              separating user, activity, and recommendation domains to ensure 
+              independent scalability and clear service ownership.
+            </p>
+        
+            <div class="project-block">
+              <h3>Architecture Design</h3>
+              <ul>
+                <li>Decomposed system into domain-driven services (User, Activity, Recommendation).</li>
+                <li>Introduced API Gateway layer to centralize routing and authentication enforcement.</li>
+                <li>Integrated Eureka for dynamic service discovery and runtime registration.</li>
+              </ul>
+            </div>
+        
+            <div class="project-block">
+              <h3>Communication Model</h3>
+              <ul>
+                <li>Implemented synchronous REST communication for user-facing workflows.</li>
+                <li>Designed asynchronous event-driven communication using Kafka.</li>
+                <li>Reduced inter-service coupling through event publishing and consumer-based processing.</li>
+              </ul>
+            </div>
+        
+            <div class="project-block">
+              <h3>Security Model</h3>
+              <ul>
+                <li>Implemented JWT authentication with Keycloak as identity provider.</li>
+                <li>Enforced token validation at gateway layer before request routing.</li>
+                <li>Applied role-based authorization at service level.</li>
+              </ul>
+            </div>
+        
+            <div class="project-block">
+              <h3>Deployment & Scalability</h3>
+              <ul>
+                <li>Containerized services using Docker.</li>
+                <li>Designed services for horizontal scalability.</li>
+                <li>Externalized configuration for environment-based deployment (local / EC2).</li>
+              </ul>
+            </div>
+        
+            <div class="project-tech">
+              <strong>Tech Stack:</strong>
+              Spring Boot · Kafka · Keycloak · Docker · PostgreSQL · MongoDB · Eureka · API Gateway
+            </div>
+        
+            <div class="project-links">
+              <a href="https://github.com/saumyaa03/fitness-microservice-app" 
+                 target="_blank" 
+                 class="project-source">
+                 View Source
+              </a>
+            </div>
+        
+          </div>
+        </section>
+
+      </section>
+        
+      <section id="architecture" class="architecture-section">
+        <div class="project-container">
+      
+          <h1 class="section-title">Architecture Highlights</h1>
+      
+          <div class="architecture-grid">
+      
+            <div class="architecture-item">
+              <h3>Microservices Pattern</h3>
+              <p>
+                Designed domain-driven services with independent deployment and 
+                scalability. Reduced tight coupling through clear service boundaries.
+              </p>
+            </div>
+      
+            <div class="architecture-item">
+              <h3>Event-Driven Communication</h3>
+              <p>
+                Implemented Kafka-based asynchronous workflows to decouple services 
+                and enable scalable recommendation processing.
+              </p>
+            </div>
+      
+            <div class="architecture-item">
+              <h3>JWT Security Flow</h3>
+              <p>
+                Enforced stateless authentication with centralized token validation 
+                at the API Gateway layer.
+              </p>
+            </div>
+      
+            <div class="architecture-item">
+              <h3>Service Discovery</h3>
+              <p>
+                Integrated Eureka for dynamic service registration and routing, 
+                enabling horizontal scaling.
+              </p>
+            </div>
+      
+            <div class="architecture-item">
+              <h3>Containerized Deployment</h3>
+              <p>
+                Containerized services using Docker with environment-based configuration 
+                for scalable deployment.
+              </p>
+            </div>
+      
+          </div>
+      
         </div>
       </section>
       
 
-      <section id="education" class="education-section">
-        <h1 class="section-title">Education</h1>
-        <div class="timeline-stepper">
-
-            <div class="step">
-            <div class="circle">🎓</div>
-            <div class="step-content">
-              <h2>Master of Applied Computer Science (Co-op)</h2>
-              <h3>Concordia University, Montreal, QC</h3>
-              <p class="date">2024 – 2026 (Expected)</p>
-              <p>
-                Currently pursuing my Master’s with a strong focus on
-                algorithmic design, artificial intelligence, and distributed
-                systems. As a member of the Institute for Co-operative
-                Education, I’m combining academic learning with industry
-                exposure to build practical, real-world solutions. GPA:
-                3.91/4.30
-              </p>
+      
+      <!-- SKILLS -->
+      
+      <section id="skills" class="skills-section">
+        <div class="container">
+      
+          <h2 class="section-title">Skills</h2>
+          <p class="skills-intro">
+            Technologies and tools used to design and deploy scalable backend systems.          </p>
+      
+          <div class="skills-grid">
+      
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <p>Java · C++ · Python · JavaScript</p>
             </div>
-          </div>
-
-          <div class="step">
-            <div class="circle">🎓</div>
-            <div class="step-content">
-              <h2>Graduate Diploma in Computer Science</h2>
-              <h3>Concordia University, Montreal, QC</h3>
-              <p class="date">2023 – 2024</p>
-              <p>
-                Completed an intensive program covering advanced C++, operating
-                systems, and data structures. This foundation strengthened my
-                core programming skills and prepared me for advanced
-                graduate-level coursework. GPA: 3.94/4.30
-              </p>
+      
+            <div class="skill-group">
+              <h3>Frameworks</h3>
+              <p>Spring Boot · React · Node.js</p>
             </div>
-          </div>
-
-          
-          <div class="step">
-            <div class="circle">🎓</div>
-            <div class="step-content">
-              <h2>Bachelor of Engineering – Electronics & Communication</h2>
-              <h3>Chitkara University, Punjab, India</h3>
-              <p class="date">2013 – 2017</p>
-              <p>
-                Built a strong technical foundation in object-oriented
-                programming, VLSI design, C programming, and computer
-                networking. This program sparked my initial curiosity in
-                software systems and embedded technologies.
-              </p>
+      
+            <div class="skill-group">
+              <h3>Databases</h3>
+              <p>PostgreSQL · MongoDB</p>
             </div>
+      
+            <div class="skill-group full-width">
+              <h3>Tools & Infrastructure</h3>
+              <p>Docker · Git · Jenkins · Kafka · Eureka · API Gateway</p>
+            </div>
+      
           </div>
+      
         </div>
       </section>
+      
 
-      <section id="skills" class="skills-section fade-in">
-        <h1 class="section-title">Skills</h1>
-        <p class="section-subtitle fade-in-subtitle">
-          A blend of programming languages, frameworks, tools, and databases
-          that I use to build efficient, scalable, and modern applications.
+      
+     <!-- Education -->
+     <section id="education" class="education-section">
+      <div class="container">
+    
+        <h2 class="section-title">Education</h2>
+    
+        <div class="education-item">
+          <h3>Master of Applied Computer Science (Co-op)</h3>
+          <p class="edu-meta">
+            Concordia University, Montreal, QC · 2024 – 2026 (Expected)
+          </p>
+          <p class="edu-details">
+            Focus: Algorithm Design, Artificial Intelligence, Distributed Systems  
+            GPA: 3.97 / 4.30
+          </p>
+        </div>
+    
+        <div class="education-item">
+          <h3>Graduate Diploma in Computer Science</h3>
+          <p class="edu-meta">
+            Concordia University, Montreal, QC · 2023 – 2024
+          </p>
+          <p class="edu-details">
+            Core areas: Advanced C++, Operating Systems, Data Structures  
+            GPA: 3.94 / 4.30
+          </p>
+        </div>
+    
+        <div class="education-item">
+          <h3>Bachelor of Engineering – Electronics & Communication</h3>
+          <p class="edu-meta">
+            Chitkara University, Punjab, India · 2013 – 2017
+          </p>
+          <p class="edu-details">
+            Foundation in Object-Oriented Programming, VLSI Design, C Programming, Computer Networking
+          </p>
+        </div>
+    
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="contact-subtext">
+          Interested in working together or discussing backend architecture?
+          Feel free to reach out.
         </p>
+    
+        <form class="contact-form">
+          <input type="email" placeholder="Email" required />
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Message" rows="5"></textarea>
+          <button type="submit" class="primary-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
 
-        <div class="skills-categories">
-          <!-- Langs -->
-          <div class="skill-card">
-            <h2>Languages</h2>
-            <div class="skill-items">
-              <div class="skill-icon">
-                <i class="devicon-java-plain colored"></i>
-                <p>Java</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-cplusplus-plain colored"></i>
-                <p>C++</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-javascript-plain colored"></i>
-                <p>JavaScript</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-python-plain colored"></i>
-                <p>Python</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- FWs -->
-          <div class="skill-card">
-            <h2>Frameworks</h2>
-            <div class="skill-items">
-              <div class="skill-icon">
-                <i class="devicon-spring-plain colored"></i>
-                <p>Spring Boot</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-react-original colored"></i>
-                <p>React</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-nodejs-plain colored"></i>
-                <p>Node.js</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tools -->
-          <div class="skill-card">
-            <h2>Tools</h2>
-            <div class="skill-items">
-              <div class="skill-icon">
-                <i class="devicon-docker-plain colored"></i>
-                <p>Docker</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-git-plain colored"></i>
-                <p>Git</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-jenkins-plain colored"></i>
-                <p>Jenkins</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-apachekafka-original colored"></i>
-                <p>Kafka</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- DBs-->
-          <div class="skill-card">
-            <h2>Databases</h2>
-            <div class="skill-items">
-              <div class="skill-icon">
-                <i class="devicon-postgresql-plain colored"></i>
-                <p>PostgreSQL</p>
-              </div>
-              <div class="skill-icon">
-                <i class="devicon-mongodb-plain colored"></i>
-                <p>MongoDB</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" class="projects-section fade-in">
-        <h1 class="section-title">Projects</h1>
-        <p class="section-subtitle fade-in-subtitle">
-          A showcase of selected projects that highlight my expertise in
-          full-stack development, system design, and modern software engineering
-          practices.
-        </p>
-
-
-        <!-- Project 1: E-commerce -->
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="images/ecommerce.png"
-              alt="E-commerce Project Screenshot"
-            />
-          </div>
-          <div class="project-info">
-            <h2>ADS Lifestyle Store</h2>
-            <p>
-              A full-stack e-commerce platform built with
-              <strong>React</strong> and <strong>Spring Boot</strong>, featuring
-              JWT-based authentication, product management, role-based login,
-              and a responsive frontend. Designed as a real-world platform for
-              my father's business, <em>Arian Drugs & Surgicals</em>.
-            </p>
-
-            <!-- Tech stack tags -->
-            <div class="tags">
-              <span>React</span>
-              <span>Spring Boot</span>
-              <span>JWT</span>
-              <span>PostgreSQL</span>
-              <span>Docker</span>
-            </div>
-
-            <!-- Buttons -->
-            <div class="buttons">
-              <!-- <a href="#" class="btn live">Live Demo</a> -->
-              <a href="#" class="btn live disabled" onclick="return false;">Live Demo (Coming Soon)</a>
-              <a href="https://github.com/saumyaa03/ecommerce-app/tree/main" class="btn source">View Source</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2: Microservices -->
-        <div class="project-card">
-          <div class="project-image">
-            <img
-              src="images/microservices.png"
-              alt="Microservices Project Screenshot"
-            />
-          </div>
-          <div class="project-info">
-            <h2>Fitness Microservices Platform</h2>
-            <p>
-              A distributed system built with
-              <strong>Spring Boot microservices</strong>, featuring
-              <strong>UserService</strong>, <strong>ActivityService</strong>,
-              <strong>AIService</strong>, service discovery with
-              <strong>Eureka</strong>, event streaming using
-              <strong>Kafka</strong>, and authentication with
-              <strong>Keycloak</strong>. This project demonstrates containerized
-              deployment and scalable service orchestration.
-            </p>
-
-            <!-- tags -->
-            <div class="tags">
-              <span>Spring Boot</span>
-              <span>React</span>
-              <span>Kafka</span>
-              <span>Keycloak</span>
-              <span>Docker</span>
-              <span>Kubernetes</span>
-            </div>
-
-            <!-- buttons -->
-            <div class="buttons">
-              <!-- <a href="#" class="btn live">Live Demo</a> -->
-              <a href="#" class="btn live disabled" onclick="return false;">Live Demo (Coming Soon)</a>
-            
-              <a href="https://github.com/saumyaa03/fitness-microservice-app" class="btn source">View Source</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact-section fade-in">
-        <h1 class="section-title">Contact</h1>
-        <p class="section-subtitle fade-in-subtitle">``
-          Whether you have a project in mind, an opportunity to discuss, or just
-          want to connect, feel free to reach out - I’d be happy to hear from you.
-        </p>
-
-
-        <div class="contact-card">
-          <h2>Connect With Me 🚀</h2>
-          <form class="contact-form">
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Your Email"
-              required
-            />
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Your Name"
-              required
-            />
-            <input type="text" name="subject" placeholder="Subject" required />
-            <textarea
-              name="message"
-              placeholder="Message"
-              rows="5"
-              required
-            ></textarea>
-            <button type="submit" class="btn submit-btn">Send</button>
-          </form>
-        </div>
-      </section>
+      <!-- CONTACT -->
+      
     </main>
 
     <footer class="footer">
@@ -378,7 +429,6 @@
       </div>
     </footer>
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- EmailJS library -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 

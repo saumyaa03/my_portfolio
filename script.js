@@ -4,17 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     emailjs.init("WoY4kskosib-svC8s"); 
   })();
 
-  // Typed.js setup
-  var typed = new Typed("#element", {
-    strings: [
-      "Status: Portfolio is still compiling... ⏳",
-      "Co-op & Internship Ready",
-      "Always Building Something New 🙂"
-    ],
-    typeSpeed: 50,
-    backSpeed: 30,
-    loop: true,
-  });
+  
 
   // Handle form submission
   const form = document.querySelector(".contact-form");
