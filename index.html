@@ -34,7 +34,10 @@
     <header>
       <nav>
         <a href="#" class="logo">Saumya</a>
-        <div class="right">
+
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+
+        <div class="right" id="nav-menu">
           <ul>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -48,26 +51,26 @@
     </header>
 
     <main>
+      <!-- Hero Section  -->
       <section class="hero">
         <div class="hero-container">
           <div class="hero-left">
-            <p class="hero-name">Saumya Rana</p>
+            <!-- <p class="hero-name">Saumya Rana</p> -->
 
             <h1 class="hero-title">
               Backend Engineer<br />
-              Distributed Systems & Cloud-Native Architecture
+              Building Scalable Distributed Systems
             </h1>
 
             <p class="hero-subtitle">
-              Master’s in Applied Computer Science · Java · Spring Boot · Kafka
+              Java · Spring Boot · Distributed Systems
             </p>
 
             <p class="hero-description">
-              I design and build production-ready backend systems using
-              microservices architecture, secure authentication flows,
-              event-driven communication, and containerized deployment.
-              Experienced in building scalable REST APIs with JWT, service
-              discovery, and cloud-based infrastructure.
+              I design and build modular backend systems with clear service
+              boundaries, centralized authentication, and scalable communication
+              patterns. My focus is on writing production-ready code that scales
+              without architectural rewrites.
             </p>
 
             <div class="hero-buttons">
@@ -76,17 +79,7 @@
                 >Download Resume</a
               >
             </div>
-            <p class="hero-stats">
-              Microservices · Event-Driven · Secure APIs · Containerized
-              Deployment
-            </p>
           </div>
-
-          <!-- <div class="hero-right">
-                <img src="images/microservices-diagram.jpg" 
-                     alt="Microservices Architecture" 
-                     class="hero-image">
-              </div> -->
         </div>
       </section>
 
@@ -104,24 +97,63 @@
 
           <ul>
             <li>
-              Developed and maintained backend business logic modules for
-              enterprise banking applications in a high-availability production
-              environment using Java.
+              Designed and maintained backend business logic modules for
+              enterprise banking applications operating in high-availability
+              production environments supporting continuous financial
+              transaction processing.
             </li>
+
             <li>
-              Worked within Agile Scrum teams to deliver secure and reliable
-              features, participating in sprint planning, peer code reviews, and
-              integration testing.
+              Delivered secure and reliable backend features within Agile Scrum
+              teams, participating in sprint planning, peer code reviews, and
+              integration testing cycles.
             </li>
+
             <li>
-              Investigated and resolved high-priority production issues,
-              ensuring system reliability and minimizing downtime for critical
-              financial services.
+              Diagnosed and resolved high-priority production incidents,
+              minimizing service disruption and improving system reliability for
+              critical financial workflows.
             </li>
+
             <li>
-              Collaborated with QA engineers and business analysts to accurately
-              implement complex functional requirements across distributed
-              system components.
+              Collaborated with QA engineers and business analysts to implement
+              complex financial workflows across distributed system components,
+              ensuring correctness and operational stability.
+            </li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="experience-header">
+            <h2>Operations & Systems Management</h2>
+            <span class="date">2019 – 2023</span>
+          </div>
+
+          <h3>Arian Drugs & Surgicals</h3>
+
+          <ul>
+            <li>
+              Managed end-to-end inventory and procurement operations for a
+              regional medical supply distribution business, overseeing stock
+              planning, vendor coordination, and order fulfillment workflows.
+            </li>
+
+            <li>
+              Optimized inventory tracking and demand planning processes,
+              reducing stock inconsistencies and improving operational
+              efficiency across product categories.
+            </li>
+
+            <li>
+              Coordinated vendor negotiations and pricing strategies while
+              ensuring regulatory and documentation compliance for medical
+              supplies.
+            </li>
+
+            <li>
+              Introduced structured digital record-keeping and process
+              standardization, improving visibility into sales, procurement
+              cycles, and inventory turnover.
             </li>
           </ul>
         </div>
@@ -129,276 +161,169 @@
 
       <!-- PROJECTS -->
       <section id="projects" class="projects-section fade-in">
-        <h1 class="section-title">Projects</h1>
-        <p class="section-subtitle fade-in-subtitle">
-          A showcase of selected projects that highlight my expertise in
-          full-stack development, system design, and modern software engineering
-          practices.
+        <h1 class="section-title">Selected Work</h1>
+        <p class="section-subtitle">
+          Focused on backend system design, distributed architecture, and
+          production-ready APIs.
         </p>
-        
-        <!-- Project 1: Microservice Project -->
 
-        <section class="project-case-study">
-          <div class="project-container">
-            <h2 class="project-title">Fitness Microservices Platform</h2>
-            <p class="project-role">Backend Architect & API Designer</p>
+        <!-- ================= FEATURED PROJECT ================= -->
+        <div class="project-featured">
+          <h2 class="project-title">Fitness Microservices Platform</h2>
+          <p class="project-role">Backend Architecture · Distributed Systems</p>
 
-            <p class="project-overview">
-              Designed and implemented a distributed microservices architecture
-              separating user, activity, and recommendation domains to ensure
-              independent scalability and clear service ownership.
-            </p>
+          <p class="project-overview">
+            Architected a distributed backend system composed of 3 independently
+            deployable services (User, Activity, AI). Reduced inter-service
+            coupling by introducing asynchronous Kafka-based event communication
+            and centralized authentication at the gateway layer. Designed for
+            horizontal scalability and independent service deployment.
+          </p>
 
-            <div class="project-block">
-              <h3>Architecture Design</h3>
-              <ul>
-                <li>
-                  Decomposed system into domain-driven services (User, Activity,
-                  Recommendation).
-                </li>
-                <li>
-                  Introduced API Gateway layer to centralize routing and
-                  authentication enforcement.
-                </li>
-                <li>
-                  Integrated Eureka for dynamic service discovery and runtime
-                  registration.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-block">
-              <h3>Communication Model</h3>
-              <ul>
-                <li>
-                  Implemented synchronous REST communication for user-facing
-                  workflows.
-                </li>
-                <li>
-                  Designed asynchronous event-driven communication using Kafka.
-                </li>
-                <li>
-                  Reduced inter-service coupling through event publishing and
-                  consumer-based processing.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-block">
-              <h3>Security Model</h3>
-              <ul>
-                <li>
-                  Implemented JWT authentication with Keycloak as identity
-                  provider.
-                </li>
-                <li>
-                  Enforced token validation at gateway layer before request
-                  routing.
-                </li>
-                <li>Applied role-based authorization at service level.</li>
-              </ul>
-            </div>
-
-            <div class="project-block">
-              <h3>Deployment & Scalability</h3>
-              <ul>
-                <li>Containerized services using Docker.</li>
-                <li>Designed services for horizontal scalability.</li>
-                <li>
-                  Externalized configuration for environment-based deployment
-                  (local / EC2).
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech">
-              <strong>Tech Stack:</strong>
-              Spring Boot · Kafka · Keycloak · Docker · PostgreSQL · MongoDB ·
-              Eureka · API Gateway
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://github.com/saumyaa03/fitness-microservice-app"
-                target="_blank"
-                class="project-source"
-              >
-                View Source
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Project 2: E-commerce -->
-        <section class="project-case-study">
-          <div class="project-container">
-            <h2 class="project-title">ADS E-commerce Platform</h2>
-            <p class="project-role">Backend Architect & API Designer</p>
-
-            <p class="project-overview">
-              Designed and implemented a modular backend system for product,
-              user, and order management with secure authentication and
-              transactional integrity.
-            </p>
-
+          <div class="project-grid">
             <div class="project-block">
               <h3>System Design</h3>
               <ul>
+                <li>Decomposed monolith into domain-driven microservices.</li>
                 <li>
-                  Designed RESTful APIs following layered Spring Boot
-                  architecture.
+                  Introduced API Gateway for centralized routing and auth
+                  enforcement.
                 </li>
+                <li>Integrated Eureka for dynamic service discovery.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h3>Communication</h3>
+              <ul>
+                <li>Synchronous REST for user-facing workflows.</li>
                 <li>
-                  Separated controller, service, and persistence layers for
-                  maintainability.
-                </li>
-                <li>
-                  Ensured clear domain boundaries for user, product, and order
-                  management.
+                  Asynchronous Kafka events to reduce inter-service coupling.
                 </li>
               </ul>
             </div>
 
             <div class="project-block">
-              <h3>Data Modeling</h3>
+              <h3>Security</h3>
               <ul>
-                <li>
-                  Modeled relational schema in PostgreSQL with normalized
-                  relationships.
-                </li>
-                <li>
-                  Implemented transactional integrity for order processing
-                  workflows.
-                </li>
-                <li>
-                  Applied indexing strategies to optimize query performance.
-                </li>
+                <li>JWT authentication with Keycloak identity provider.</li>
+                <li>Token validation enforced at gateway layer.</li>
               </ul>
             </div>
 
             <div class="project-block">
-              <h3>Security Implementation</h3>
+              <h3>Deployment</h3>
               <ul>
-                <li>Implemented stateless JWT-based authentication.</li>
-                <li>
-                  Applied role-based authorization to protect secured endpoints.
-                </li>
-                <li>
-                  Ensured proper validation and error handling for secure API
-                  design.
-                </li>
+                <li>Docker containerization for independent scaling.</li>
+                <li>Environment-based configuration (local & EC2).</li>
               </ul>
-            </div>
-
-            <div class="project-tech">
-              <strong>Tech Stack:</strong>
-              Spring Boot · PostgreSQL · JWT · Docker · React
-            </div>
-
-            <div class="project-links">
-              <a
-                href="https://github.com/saumyaa03/ecommerce-app/tree/main"
-                target="_blank"
-                class="project-source"
-              >
-                View Source
-              </a>
             </div>
           </div>
-        </section>
 
-        
-      </section>
+          <div class="project-tech">
+            <strong>Tech Stack:</strong>
+            Spring Boot · Kafka · Keycloak · Docker · PostgreSQL · MongoDB ·
+            Eureka · API Gateway
+          </div>
 
-      <section id="architecture" class="architecture-section">
-        <div class="project-container">
-          <h1 class="section-title">Architecture Highlights</h1>
+          <p class="project-impact">
+            Emphasized clear service boundaries, event-driven communication, and
+            infrastructure abstraction to enable independent scaling and
+            maintainability.
+          </p>
 
-          <div class="architecture-grid">
-            <div class="architecture-item">
-              <h3>Microservices Pattern</h3>
-              <p>
-                Designed domain-driven services with independent deployment and
-                scalability. Reduced tight coupling through clear service
-                boundaries.
-              </p>
-            </div>
+          <div class="project-links">
+            <a
+              href="https://github.com/saumyaa03/fitness-microservice-app"
+              target="_blank"
+              class="project-source"
+            >
+              View Source
+            </a>
+          </div>
 
-            <div class="architecture-item">
-              <h3>Event-Driven Communication</h3>
-              <p>
-                Implemented Kafka-based asynchronous workflows to decouple
-                services and enable scalable recommendation processing.
-              </p>
-            </div>
+          <div class="project-architecture">
+            <h3 class="architecture-heading">System Architecture Overview</h3>
 
-            <div class="architecture-item">
-              <h3>JWT Security Flow</h3>
-              <p>
-                Enforced stateless authentication with centralized token
-                validation at the API Gateway layer.
-              </p>
-            </div>
+            <p class="architecture-caption">
+              High-level service interaction and infrastructure layout.
+            </p>
 
-            <div class="architecture-item">
-              <h3>Service Discovery</h3>
-              <p>
-                Integrated Eureka for dynamic service registration and routing,
-                enabling horizontal scaling.
-              </p>
-            </div>
+            <img
+              src="images/fitness-architecture.png"
+              alt="Fitness Microservice Architecture"
+              class="architecture-image"
+            />
+          </div>
+        </div>
 
-            <div class="architecture-item">
-              <h3>Containerized Deployment</h3>
-              <p>
-                Containerized services using Docker with environment-based
-                configuration for scalable deployment.
-              </p>
-            </div>
+        <!-- ================= SUPPORTING PROJECT ================= -->
+        <div class="project-compact">
+          <h2 class="project-title">ADS E-commerce Platform</h2>
+          <p class="project-role">Backend API Design · Relational Modeling</p>
+
+          <p class="project-overview">
+            Designed and implemented a modular Spring Boot backend supporting
+            product, user, and order domains with JWT-based authentication and
+            transactional integrity. Optimized relational schema design and
+            indexing strategy to improve query efficiency.
+          </p>
+
+          <div class="project-tech">
+            <strong>Tech Stack:</strong>
+            Spring Boot · PostgreSQL · JWT · Docker · React
+          </div>
+
+          <div class="project-links">
+            <a
+              href="https://github.com/saumyaa03/ecommerce-app/tree/main"
+              target="_blank"
+              class="project-source"
+            >
+              View Source
+            </a>
           </div>
         </div>
       </section>
 
       <!-- SKILLS -->
 
+      <!-- ================= SKILLS ================= -->
       <section id="skills" class="skills-section">
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <p class="skills-intro">
-            Technologies and tools used to design and deploy scalable backend
-            systems.
-          </p>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="skills-intro">
+          Backend-focused technologies used to design scalable distributed
+          systems and production-ready APIs.
+        </p>
 
-          <div class="skills-grid">
-            <div class="skill-group">
-              <h3>Languages</h3>
-              <p>Java · Python · JavaScript · C++  </p>
-            </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Backend & Architecture</h3>
+            <p>
+              Spring Boot · REST APIs · Microservices · JWT · OAuth2 · WebFlux ·
+              Event-Driven Architecture · System Design
+            </p>
+          </div>
 
-            <div class="skill-group">
-              <h3>Backend & APIs</h3>
-              <p>Spring Boot · Spring Security · REST APIs · Microservices · Node.js</p>
-            </div>
+          <div class="skill-group">
+            <h3>Data & Messaging</h3>
+            <p>
+              PostgreSQL · MongoDB · Kafka · Transactions · Indexing · Schema
+              Design
+            </p>
+          </div>
 
-            <div class="skill-group">
-              <h3>Databases</h3>
-              <p>PostgreSQL · MongoDB · SQL · Data Modeling · Indexing</p>
-            </div>
+          <div class="skill-group">
+            <h3>DevOps & Infrastructure</h3>
+            <p>
+              Docker · Git · Jenkins · AWS EC2 · CI/CD · Eureka · API Gateway ·
+              Keycloak
+            </p>
+          </div>
 
-            <div class="skill-group">
-              <h3>Distributed Systems</h3>
-              <p>Kafka · Event-Driven Architecture · Service Discovery (Eureka) · API Gateway</p>
-            </div>
-
-            <div class="skill-group">
-              <h3>Security</h3>
-              <p>JWT · OAuth2 · Keycloak · Role-Based Access Control</p>
-            </div>
-
-            <div class="skill-group full-width">
-              <h3>Cloud & DevOps</h3>
-              <p>Docker · AWS EC2 · RDS · CI/CD · Git · Jenkins</p>
-            </div>
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Java · Python · C++ · JavaScript</p>
           </div>
         </div>
       </section>
@@ -413,10 +338,7 @@
             <p class="edu-meta">
               Concordia University, Montreal, QC · 2024 – 2026 (Expected)
             </p>
-            <p class="edu-details">
-              Focus: Algorithm Design, Artificial Intelligence, Distributed
-              Systems GPA: 3.97 / 4.30
-            </p>
+            <p class="edu-details">GPA: 3.97 / 4.30</p>
           </div>
 
           <div class="education-item">
@@ -424,10 +346,7 @@
             <p class="edu-meta">
               Concordia University, Montreal, QC · 2023 – 2024
             </p>
-            <p class="edu-details">
-              Core areas: Advanced C++, Operating Systems, Data Structures GPA:
-              3.94 / 4.30
-            </p>
+            <p class="edu-details">GPA: 3.94 / 4.30</p>
           </div>
 
           <div class="education-item">
@@ -435,10 +354,7 @@
             <p class="edu-meta">
               Chitkara University, Punjab, India · 2013 – 2017
             </p>
-            <p class="edu-details">
-              Foundation in Object-Oriented Programming, VLSI Design, C
-              Programming, Computer Networking
-            </p>
+            <p class="edu-details"></p>
           </div>
         </div>
       </section>
@@ -480,5 +396,14 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <script src="script.js"></script>
+
+    <script>
+      const toggle = document.getElementById("menu-toggle");
+      const menu = document.querySelector("nav .right");
+
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
